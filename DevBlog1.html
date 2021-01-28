@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="getting-started-with-markdown">Getting Started with Markdown!</h1>
+<h2 id="what-is-markdown">What is Markdown?</h2>
+<p>Markdown is a markup language that adds formatting elements to plaintext text documents. Basically, you use special syntax that makes your pages pretty. Essentially, you're writing HTML in simpler terms. When writing in Markdown, you can convert the &quot;.md&quot; file to HTML files! Markdown is useful because it can be used for many things (websites, emails, technical documentation), and a lot of platforms support it (Reddit, Github).</p>
+<h2 id="useful-syntax">Useful Syntax</h2>
+<p>Here are some commonly used features of Markdown that are good to note!</p>
+<h3 id="headings">Headings</h3>
+<p>Headings are denoted with the # symbol. A single # gives you a large heading (Heading 1), and more # symbols mean smaller headings (up to 6). Remember to leave a space between the # and your heading text! For heading levels 1 and 2, they can also be written by adding lines of = or - characters, respectively.</p>
+<h3 id="paragraphs">Paragraphs</h3>
+<p>Paragraphs don't require any special syntax. To insert a line break, add a couple spaces at the end of your sentence and hit return. Alternatively, you can use the HTML br tag if the spaces are too hard to keep track of.</p>
+<h3 id="bold">Bold</h3>
+<p>By putting a word in between two asterisks or two underscores, it will make it <strong>bold</strong>. Haha, see what I did there?</p>
+<h3 id="italic">Italic</h3>
+<p>By putting a word in between one asterisk or one underscore, <em>voila</em>! Italics.</p>
+<h3 id="now-both">Now Both!</h3>
+<p>I don't know why you would ever need something to be both bold and italic, but if you do, that calls for three asterisks.</p>
+<h3 id="blockquotes">Blockquotes</h3>
+<p>A &gt; in front of a paragraph will make the text a blockquote. Insert a &gt; with no text to make a new paragraph. You can even nest them by adding two of the arrows! You're also able to add other Markdown elements within the blockquote, but not all of them.</p>
+<blockquote>
+<p>Did it work?</p>
+<blockquote>
+<p>I guess we'll see.</p>
+</blockquote>
+</blockquote>
+<h3 id="lists">Lists</h3>
+<p>You can make both ordered and unordered lists. If you want to add a paragraph element or something other than a line item in between the list items, make sure to ident appropriately so it doesn't look wonky.</p>
+<h4 id="ordered-lists">Ordered Lists</h4>
+<p>To make an ordered list, just add the items with numbers followed by periods. For example: &quot;1. apples&quot;. The numbers don't have to be in numerical order, but they should start with the number one. You can indent for little inception lists.</p>
+<ol style="list-style-type: decimal">
+<li>Did</li>
+<li>That</li>
+<li>Make</li>
+<li>Sense
+<ol style="list-style-type: decimal">
+<li>Hopefully?</li>
+</ol></li>
+</ol>
+<h4 id="unordered-lists">Unordered Lists</h4>
+<p>To make an unordered list, dashes, asterisks, or plus signs in front of your items work. Same thing goes for the indentation as well.</p>
+<p><em>Apples </em>Oranges *Bananas</p>
+<h3 id="horizontal-rules">Horizontal Rules</h3>
+<p>Make a horizontal break in your page using 3 or more asterisks, dashes, or underscores. Put a blank line before and after a horizontal rule just in case.</p>
+<hr />
+<p>Woohoo!</p>
+<h3 id="links">Links</h3>
+<p>Use brackets for the text you want displayed on the page, and parentheses for the actual URL. If you want a message to be displayed when the user is hovering on the link, just type in the message after the URL in quotations (while still in the parentheses). [Click here!](www.url.com &quot;here's a message&quot;)<br />
+Angle brackets, &lt;blah&gt;, denotes a link as well. This method is good for emails!<br />
+Links can also be formatted with bold and italics.</p>
+<h3 id="images">Images</h3>
+<p>Add an exclamation point, followed by the alt text (what displays if the picture doesn't load), and then the path / URL. You can also add the title after the URL in quotations (while still in the parentheses).<br />
+Example: !<a href="url/path/duck.jpg" title="duck">Picture of Duck.</a> []Picture of Duck.](https://images-na.ssl-images-amazon.com/images/I/71LgxJzwFKL.<em>SL1500</em>.jpg&quot;duck&quot;)</p>
+<h3 id="code">Code</h3>
+<p>Using backticks around coding terms makes them appear in a special format! For example: <code>pwd</code></p>
+<h3 id="backslash">Backslash</h3>
+<p>Using a backslash indicates you are using Markdown syntax, but you want it to show up regularly. (Symbols such as asterisks, underscores, etc).</p>
+<h3 id="html">HTML</h3>
+<p>If you forget the Markdown way to write it, have no fear. You can just use HTML tags in Markdown as well.</p>
+<h2 id="converting-to-html">Converting to HTML</h2>
+<p>Since we've installed Pandoc, it's relatively easy to convert .md files to .html . Use the command &quot;pandoc test.md -s -o test.html&quot;. We did it!</p>
+</body>
+</html>
